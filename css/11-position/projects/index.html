@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: whitesmoke;
+      }
+
+      .card {
+        height: 500px;
+        width: 400px;
+        background-color: white;
+
+        box-shadow: 0px 0px 20px black;
+        border-radius: 10px;
+
+        margin-top: 100px;
+        margin-left: 40%;
+
+        overflow: hidden;
+      }
+
+      .top {
+        height: 40%;
+        background-color: purple;
+
+        position: relative;
+        border-bottom: 2px solid white;
+      }
+
+      .bottom {
+        height: 60%;
+        background-color: peru;
+      }
+
+      .profile-box {
+        height: 130px;
+        width: 130px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -30%;
+        left: 30%;
+
+        background-color: pink;
+        overflow: hidden;
+      }
+
+      .profile-box img{
+        height: 100%;
+        width: 100%;
+        object-position: top;
+        object-fit: cover;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div class="profile-box">
+          <img
+            src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlfGVufDB8fDB8fHww"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>

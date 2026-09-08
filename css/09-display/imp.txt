@@ -1,0 +1,9 @@
+block elements -> 
+1.they always take full width by default
+2.they allow you to change their height and width means you can malipulate with their heights and widths
+
+
+
+inline elements -> 
+1. they always take the required width as much as they need
+2. they never allow you to change their height and width by default
