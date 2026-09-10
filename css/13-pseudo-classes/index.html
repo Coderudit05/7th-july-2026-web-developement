@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 40px;
+      }
+
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: brown;
+        color: white;
+      }
+
+      button:active {
+        background-color: blueviolet;
+      }
+
+      input {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 6px;
+        border: none;
+      }
+
+      input:focus {
+        outline: none;
+        background-color: pink;
+      }
+      a:visited{
+
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover Me</button>
+
+    <input type="text" placeholder="Enter Your Name" />
+
+    <a href="https://www.netflix.com/in/" target="_blank"
+      >Go to Netflix
+    </a>
+  </body>
+</html>

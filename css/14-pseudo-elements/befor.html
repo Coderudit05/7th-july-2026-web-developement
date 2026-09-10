@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1::before {
+        content: "'";
+      }
+
+      h1::after {
+        content: "'";
+      }
+
+      h1 span::before {
+        content: "😁😁😁😁😁";
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span>Hello</span> how are you Udit</h1>
+  </body>
+</html>
