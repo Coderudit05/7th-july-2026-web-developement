@@ -27,20 +27,50 @@
         justify-content: center;
       }
 
-      h1::before {
-        content: "'";
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+
+        position: relative;
+        overflow: hidden;
+
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
       }
 
-      h1::after {
-        content: "'";
+      /* button::before{
+        content: '(';
+      }
+      button::after{
+        content: ')';
+      } */
+
+      button::before {
+        content: "";
+        height: 100%;
+        width: 0%;
+        background-color: blueviolet;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        transition-property: all;
+        transition-duration: 0.3s;
       }
 
-      h1 span::before {
-        content: "😁😁😁😁😁";
+      button:hover::before {
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <h1><span>Hello</span> how are you Udit</h1>
+    <button>Hover Me</button>
   </body>
 </html>
