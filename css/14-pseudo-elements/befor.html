@@ -61,8 +61,17 @@
         left: 0;
         z-index: -1;
 
-        transition-property: all;
-        transition-duration: 0.3s;
+        /* transition-property: all;
+        transition-duration: 0.3s; */
+
+
+        transition: all 0.3s linear 5s;
+        /* transition-timing-function: linear; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+
+        /* transition-delay: 5s; */
       }
 
       button:hover::before {

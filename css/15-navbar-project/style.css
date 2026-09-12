@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    /* background-color: white; */
+
+
+}
+
+nav {
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 64px;
+
+    padding: 0px 50px;
+}
+
+#logo {
+    font-size: 40px;
+}
+
+#logo span {
+    color: blueviolet;
+    font-size: 100px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ul a {
+
+    color: white;
+    text-decoration: none;
+}
