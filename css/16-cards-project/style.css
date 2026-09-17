@@ -26,10 +26,19 @@ body {
     /* height: 400px; */
     width: 450px;
     /* background-color: white; */
-    border: 1px solid white;
+    border: 1px solid #3a6219;
     border-radius: 10px;
 
     padding: 30px;
+    position: relative;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#card:hover {
+    box-shadow: 0px 0px 20px #88F82E;
 }
 
 #iconContainer {
@@ -78,4 +87,16 @@ p {
 
     padding: 10px;
     border-radius: 10px;
+}
+
+#status {
+    background-color: rgb(150, 240, 120);
+    color: black;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font: bold;
+    cursor: pointer;
 }
