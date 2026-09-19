@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0.1px;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    border: 1px solid white;
+    margin-top: 20%;
+}
+
+#footerWrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: peru; */
+
+    padding: 20px 40px;
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#col1 {
+    width: 100px;
+
+}
+
+#col1 img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#col5 p {
+    max-width: 350px;
+}
