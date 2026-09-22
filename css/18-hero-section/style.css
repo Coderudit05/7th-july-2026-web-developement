@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 10px gray;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: pink; */
+    height: 64px;
+    padding: 0px 10px;
+    width: 1400px;
+    max-width: 1400px;
+}
+
+#logo {
+    width: 200px;
+
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+#navBtn {
+    background: linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/* from here we will start building the hero section */
+
+#heroSection {}
