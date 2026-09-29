@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+
+    animation: box-anime 2s infinite;
+
+
+}
+
+/* 
+
+phase 1 -> create the animation
+phase 2 -> apply the animation on the other elements*/
+
+
+/* @keyframes box-anime {
+
+    from {
+        transform: translate(100px, 100px);
+    }
+
+    to {
+        transform: translate(1200px, 200px);
+    }
+} */
+
+
+
+/* @keyframes box-anime {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+
+    50% {
+        transform: translate(1200px);
+    }
+
+    100% {
+        transform: translate(1200px, 400px);
+
+    }
+
+} */
+
+
+@keyframes box-anime {
+
+    0%,
+    100% {
+
+        transform: translate(0, 0);
+
+    }
+
+    25% {
+        transform: translate(1200px);
+
+    }
+
+    50% {
+        transform: translate(1200px, 400px);
+
+    }
+
+    75% {
+        transform: translate(0px, 400px);
+
+    }
+
+    /* 100% {
+        transform: translate(0px, 0px);
+    } */
+}
