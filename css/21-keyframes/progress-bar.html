@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+
+        background-color: rgb(7, 7, 8);
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: rgb(238, 204, 204);
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .progress-bar {
+        height: 50px;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .progress-bar::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: greenyellow;
+        position: absolute;
+
+        transform: translateX(-100%);
+
+        animation-name: progress-anime;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes progress-anime {
+        0% {
+          transform: translateX(-100%);
+        }
+
+        20% {
+          transform: translateX(-80%);
+        }
+        40% {
+          transform: translateX(-60%);
+        }
+        60% {
+          transform: translateX(-40%);
+        }
+        80% {
+          transform: translateX(-20%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="progress-bar"></div>
+    </div>
+  </body>
+</html>
