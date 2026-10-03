@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #99d5ee;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 30px;
+
+        position: relative;
+      }
+
+      .ball {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(
+          to right,
+          rgb(236, 72, 153),
+          rgb(239, 68, 68),
+          rgb(234, 179, 8)
+        );
+        border-radius: 50%;
+
+        position: absolute;
+
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        animation: ball-anime 2s infinite ease-in;
+      }
+
+      .shadow {
+        height: 30px;
+        width: 100px;
+        background-color: gray;
+        position: absolute;
+
+        bottom: 10px;
+        border-radius: 50%;
+
+        left: 50%;
+
+        transform: translateX(-50%) scale(1.5);
+
+        animation: shadow-anime 2s infinite ease-in;
+      }
+
+      @keyframes ball-anime {
+        0%,
+        100% {
+          transform: translate(-50%, 0);
+        }
+        50% {
+          transform: translate(-50%, -150px);
+        }
+      }
+
+      @keyframes shadow-anime {
+        0%,100%{
+            transform: translateX(-50%) scale(1);
+        }
+        
+        50%{
+            
+            transform: translateX(-50%) scale(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Bouncing Ball</h1>
+
+      <div class="ball"></div>
+      <div class="shadow"></div>
+    </div>
+  </body>
+</html>
