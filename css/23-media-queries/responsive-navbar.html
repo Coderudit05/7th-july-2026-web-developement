@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f12c1313f0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        height: 64px;
+      }
+
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        font-size: 18px;
+      }
+
+      ul a {
+        text-decoration: none;
+      }
+
+
+      #menu-icon{
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          display: none;
+        }
+
+        button{
+
+            display: none;
+
+        }
+
+        #menu-icon{
+            display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">Logo</div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Work</a></li>
+        </ul>
+
+        <button>Get Started</button>
+
+        <div id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
