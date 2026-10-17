@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      section{
+        min-height: 100vh;
+        background-color: black;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        padding: 40px;
+        flex-wrap: wrap;
+        
+      }
+
+      .card{
+        height: 300px;
+        width: 300px;
+        border: 2px solid white;
+        /* flex-shrink: 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </section>
+  </body>
+</html>
